@@ -4,9 +4,32 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LinqDemoWpfUI.Views"
-        mc:Ignorable="d"
-        Title="ShellView" Height="450" Width="800">
-    <Grid>
+        mc:Ignorable="d" FontSize="18"
+        Title="QuickInvoice" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" FontSize="18">
+            <MenuItem Header="_Fisier">
+                <MenuItem x:Name="Inchidere" Header="_Inchide aplicatia" />
+            </MenuItem>
+                <MenuItem Header="_Operatiuni" >
+                <MenuItem x:Name="Facturi" Header="F_acturi"/>
+            </MenuItem>
+            <MenuItem Header="_Configurari" >
+                <MenuItem x:Name="Articole" Header="_Articole"/>
+                <MenuItem x:Name="Clienti" Header="C_lienti"/>
+                <MenuItem x:Name="SeriiFacturi" Header="_Serii facturi"/>
+            </MenuItem>
+        </Menu>
+
+        <!--<StackPanel DockPanel.Dock="Left" >
+            <StackPanel Orientation="Vertical" >
+                <Label Content="Operatiuni" FontSize="12" HorizontalContentAlignment="Left"/>
+                <Button Content="Facturi" FontSize="12" Background="Transparent" HorizontalContentAlignment="Left"/>
+            </StackPanel>
+        </StackPanel>-->
         
-    </Grid>
+        <Grid>
+            <ContentControl x:Name="ActiveItem" Margin="5"/>
+        </Grid>
+    </DockPanel>
 </Window>

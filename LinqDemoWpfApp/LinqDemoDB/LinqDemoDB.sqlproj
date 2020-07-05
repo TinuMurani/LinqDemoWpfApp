@@ -65,4 +65,11 @@
   <ItemGroup>
     <None Include="PublishLocations\LinqDemoDB.publish.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Articole.sql" />
+    <Build Include="dbo\Tables\Clienti.sql" />
+    <Build Include="dbo\Tables\Facturi.sql" />
+    <Build Include="dbo\Tables\DetaliiFacturi.sql" />
+    <Build Include="dbo\Tables\SeriiFacturi.sql" />
+  </ItemGroup>
 </Project>
