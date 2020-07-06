@@ -16,6 +16,9 @@
                 <DatePicker x:Name="PanaLaData" Width="150"/>
                 <DatePicker x:Name="DeLaData" Width="150"/>
             </StackPanel>
+            <Button x:Name="afisareFacturi" Content="Afisare" Padding="30 0" Margin="5"/>
+            <Line Height="25" Width="3" Stroke="DarkGray" StrokeThickness="3"/>
+            <Button x:Name="facturaNoua" Content="Factura _noua" Padding="30 0" Margin="5" />
         </StackPanel>
 
         <Grid>
@@ -31,6 +34,10 @@
                 <ColumnDefinition Width="auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
+
+            <DataGrid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"> 
+                
+            </DataGrid>
         </Grid>
     </DockPanel>
 </UserControl>
